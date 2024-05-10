@@ -8,7 +8,7 @@ class Player: # 玩家抽象类
     def get_move(self, board):
         raise NotImplementedError("This method should be overridden by subclasses")
 
-class ComputerPlayer(Player): # 计算机玩家
+class ComputerPlayer(Player): # 计算机玩家【随机移动】
     def __init__(self, color):
             super().__init__(color)
     

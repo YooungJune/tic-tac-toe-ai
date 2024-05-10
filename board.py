@@ -62,8 +62,8 @@ class Board:
         for i in range(3):
             for j in range(3):
                 if self.board[i, j] == 1:
-                    pygame.draw.rect(self.display, RED, pygame.Rect(i*self.BLOCK_SIZE, j*self.BLOCK_SIZE, self.BLOCK_SIZE, self.BLOCK_SIZE))
+                    pygame.draw.rect(self.display, RED, pygame.Rect(i*self.BLOCK_SIZE+3, j*self.BLOCK_SIZE+3, self.BLOCK_SIZE-3, self.BLOCK_SIZE-3))
                 elif self.board[i, j] == 2:
-                    pygame.draw.rect(self.display, BLUE1, pygame.Rect(i*self.BLOCK_SIZE, j*self.BLOCK_SIZE, self.BLOCK_SIZE, self.BLOCK_SIZE))
+                    pygame.draw.rect(self.display, BLUE1, pygame.Rect(i*self.BLOCK_SIZE+3, j*self.BLOCK_SIZE+3, self.BLOCK_SIZE-3, self.BLOCK_SIZE-3))
         pygame.display.flip()
         return
